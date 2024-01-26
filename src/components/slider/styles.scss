@@ -7,7 +7,7 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  width: 93%;
+  width: 98%;
   height: 260px;
   height: 224px;
   padding: 0 76px;
@@ -24,12 +24,13 @@
   font-size: 18px;
   background: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .Slider-card {
-  max-width: 462px;
+  max-width: 377px;
+  max-width: 352px;
   margin-left: 4px;
   margin-bottom: 30px;
 
@@ -73,7 +74,7 @@
 
 .Slider-right {
   top: 17%;
-  right: -63px;
+  right: 9px;
 }
 
 .Slider-left.swiper-button-disabled,
@@ -109,4 +110,5 @@
 
 .Slider .swiper-slide.swiper-slide-next {
   width: 470px !important;
+  width: 454px !important;
 }

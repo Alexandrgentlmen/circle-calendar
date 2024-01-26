@@ -30,7 +30,7 @@ function Slider({ periodTimes, setId }: ISliderProps) {
       </button>
       <Swiper
         slidesPerView={1}
-        spaceBetween={10}
+        spaceBetween={0}
         draggable={true}
         navigation={{
           nextEl: '.Slider-right',
