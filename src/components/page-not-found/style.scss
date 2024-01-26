@@ -1,0 +1,17 @@
+@import '~/styles/colors.scss';
+
+.PageNotFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $background-color;
+  color: #000;
+}
+
+.PageNotFound-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: $blue-color;
+}

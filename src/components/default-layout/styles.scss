@@ -1,0 +1,14 @@
+@import '~/styles/colors.scss';
+
+.DefaultLayout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 100vh;
+  width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-right: 1px solid $gray-color;
+  border-left: 1px solid $gray-color;
+}

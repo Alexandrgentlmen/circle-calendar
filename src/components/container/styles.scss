@@ -1,0 +1,23 @@
+.Container {
+  display: flex;
+  padding-top: 120px;
+  width: 100%;
+  justify-content: center;
+  height: fit-content;
+}
+
+.Container-year {
+  top: 364px;
+  display: flex;
+  gap: 60px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container-dot {
+  display: flex;
+  gap: 80px;
+  position: absolute;
+  top: 300px;
+}

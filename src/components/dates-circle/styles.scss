@@ -1,0 +1,31 @@
+@import '~/styles/colors.scss';
+
+.Datescircle {
+  top: -48px;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Datescircle-circle {
+  border-radius: 50%;
+  border: none;
+  border: 1px solid $gray-color;
+  width: 530px;
+  height: 530px;
+}
+
+.Datescircle-title {
+  position: absolute;
+  left: 478px;
+  top: 55px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $black-color;
+}

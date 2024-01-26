@@ -1,0 +1,115 @@
+@import '~/styles/colors.scss';
+@import '~/styles/vars.scss';
+
+.Slider {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  width: 91%;
+  height: 260px;
+  height: 224px;
+  padding: 0 60px;
+  // padding-bottom: 58px;
+  margin: 0 auto;
+
+  @media (max-width: 800px) {
+    margin-top: -240px;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Slider-card {
+  max-width: 390px;
+  max-width: 350px;
+  max-width: 362px;
+  max-width: 449px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+
+  @media (max-width: 800px) {
+    margin-left: 0;
+  }
+
+  @media (max-width: 400px) {
+    width: 280px;
+  }
+}
+
+.Slider-card-year {
+  font-family: --second-family;
+  font-size: 25px;
+  color: $blue-color;
+  text-align: left;
+  padding-bottom: 13px;
+
+  @media (max-width: 400px) {
+    font-size: 20px;
+  }
+}
+
+.Slider-card-text {
+  padding-right: 31px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.Slider-left {
+  top: 17%;
+  left: 26px;
+}
+
+.Slider-right {
+  top: 17%;
+  right: -90px;
+}
+
+.Slider-left.swiper-button-disabled,
+.Slider-right.swiper-button-disabled {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.Slider-left,
+.Slider-right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: $blue-color;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0px 0px 15px 0px $shadow-color;
+  -webkit-box-shadow: 0px 0px 15px 0px $shadow-color;
+  -moz-box-shadow: 0px 0px 15px 0px $shadow-color;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.Slider .swiper-wrapper {
+  justify-content: space-between;
+}
+
+.Slider .swiper-slide.swiper-slide-next {
+  width: 470px !important;
+}

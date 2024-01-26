@@ -1,0 +1,22 @@
+@import '~/styles/colors.scss';
+
+.Year {
+  font-size: 200px;
+}
+
+.Year-start {
+  font-weight: 700;
+  color: $iris-color;
+  font-size: 200px;
+  line-height: 160px;
+  letter-spacing: -4px
+}
+
+.Year-end {
+  font-weight: 700;
+  color: $fuscia-color;
+  font-size: 200px;
+  font-style: normal;
+  line-height: 160px;
+  letter-spacing: -4px
+}

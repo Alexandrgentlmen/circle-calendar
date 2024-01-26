@@ -1,0 +1,75 @@
+@import '~/styles/colors.scss';
+$DOT_CONTAINER: 290px;
+$DOT_BUTTON_SIZE: 50px;
+$TRANSFORM_TRANSITION_TIME: 0.5s;
+
+.Dot {
+  width: $DOT_CONTAINER;
+  position: absolute;
+  transition: transform $TRANSFORM_TRANSITION_TIME ease-in-out;
+  transform-origin: right center;
+  left: calc(50% - $DOT_CONTAINER);
+}
+
+
+.Dot-wrapper {
+  position: relative;
+  width: $DOT_BUTTON_SIZE;
+  height: $DOT_BUTTON_SIZE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.Dot-button {
+  position: absolute;
+  width: $DOT_BUTTON_SIZE;
+  height: $DOT_BUTTON_SIZE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform $TRANSFORM_TRANSITION_TIME;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 20;
+  outline: none;
+  border: 1px solid rgba(48, 62, 88, 0.5);
+  color: $block-gray;
+  background-color: $background-color;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+.Dot-button-active {
+  position: absolute;
+  width: $DOT_BUTTON_SIZE;
+  height: $DOT_BUTTON_SIZE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform $TRANSFORM_TRANSITION_TIME;
+  border-radius: 50%;
+  opacity: 1;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 20;
+  outline: none;
+  border: 1px solid $block-gray;
+  color: $block-gray;
+  background-color: $background-color;
+}
+
+.Dot-element {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $black-color;
+  z-index: -1;
+}
