@@ -2,6 +2,12 @@
   position: absolute;
   top: -148px;
   padding-left: 3px;
+
+}
+
+.SliderControllers svg:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: #fff;
 }
 
 .SliderControllers-count {

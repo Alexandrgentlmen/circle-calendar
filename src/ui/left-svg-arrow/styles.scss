@@ -1,6 +1,12 @@
 .LeftSvgArrow {
   border: none;
   cursor: pointer;
+  border-radius: 50%;
   background: transparent;
   margin-right: 20px;
+}
+
+.LeftSvgArrow svg {
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 50%;
 }

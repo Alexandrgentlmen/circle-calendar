@@ -9,6 +9,7 @@ $TRANSFORM_TRANSITION_TIME: 0.5s;
   transition: transform $TRANSFORM_TRANSITION_TIME ease-in-out;
   transform-origin: right center;
   left: calc(50% - $DOT_CONTAINER);
+  z-index: 2000;
 }
 
 

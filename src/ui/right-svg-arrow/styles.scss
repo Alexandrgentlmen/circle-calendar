@@ -3,3 +3,8 @@
   cursor: pointer;
   background: transparent;
 }
+
+.RightSvgArrow svg {
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 50%;
+}

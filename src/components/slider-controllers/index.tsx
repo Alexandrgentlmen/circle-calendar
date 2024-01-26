@@ -9,12 +9,10 @@ interface IControllersProps {
   currentPeriod: number;
   toBack: () => void;
   toForward: () => void;
-  active: boolean;
 }
 function SliderControllers({
   dates,
   currentPeriod,
-  active,
   toBack,
   toForward,
 }: IControllersProps) {
@@ -25,8 +23,8 @@ function SliderControllers({
         0{currentPeriod + 1}/0{dates.length}
       </div>
 
-      <LeftSvgArrow active={active} toBack={toBack} />
-      <RightSvgArrow active={active} toForward={toForward} />
+      <LeftSvgArrow active={currentPeriod !== 0} toBack={toBack} />
+      <RightSvgArrow active={currentPeriod !== 5} toForward={toForward} />
     </div>
   );
 }

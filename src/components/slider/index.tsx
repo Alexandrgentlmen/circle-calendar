@@ -21,7 +21,6 @@ function Slider({ periodTimes, setId }: ISliderProps) {
       <SliderControllers
         dates={dates}
         currentPeriod={periodTimes}
-        active={true}
         toBack={() => setId(periodTimes, 'left')}
         toForward={() => setId(periodTimes, 'right')}
       />
