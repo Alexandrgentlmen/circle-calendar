@@ -2,21 +2,53 @@
 
 .Year {
   font-size: 200px;
+
+  @media (max-width: 1440px) {
+    font-size: 160px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 120px;
+  }
+
+  @media (max-width: 760px) {
+    font-size: 90px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 64px;
+  }
+
+  @media (max-width: 380px) {
+    font-size: 56px;
+  }
 }
 
 .Year-start {
   font-weight: 700;
   color: $iris-color;
-  font-size: 200px;
   line-height: 160px;
-  letter-spacing: -4px
+  letter-spacing: -4px;
+
+  @media (max-width: 380px) {
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
 }
 
 .Year-end {
   font-weight: 700;
   color: $fuscia-color;
-  font-size: 200px;
   font-style: normal;
   line-height: 160px;
-  letter-spacing: -4px
+  letter-spacing: -4px;
+
+  @media (max-width: 380px) {
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
 }

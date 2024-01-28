@@ -1,7 +1,11 @@
 .SliderControllers {
   position: absolute;
-  top: -148px;
   padding-left: 3px;
+
+  @media (max-width: 1024px) {
+    left: 20px;
+    bottom: 20px;
+  }
 
 }
 
@@ -14,4 +18,8 @@
   padding-bottom: 20px;
   text-align: left;
   font-size: 14px;
+
+  @media (max-width: 480px) {
+    padding-bottom: 10px;
+  }
 }

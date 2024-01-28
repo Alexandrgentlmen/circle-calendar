@@ -1,5 +1,6 @@
 @import '~/styles/colors.scss';
 $DOT_CONTAINER: 290px;
+$DOT_CONTAINER_MID: 270px;
 $DOT_BUTTON_SIZE: 50px;
 $TRANSFORM_TRANSITION_TIME: 0.5s;
 
@@ -10,6 +11,17 @@ $TRANSFORM_TRANSITION_TIME: 0.5s;
   transform-origin: right center;
   left: calc(50% - $DOT_CONTAINER);
   z-index: 2000;
+
+  @media (max-width: 760px) {
+    width: $DOT_CONTAINER_MID;
+    left: calc(50% - $DOT_CONTAINER_MID);
+  }
+
+  @media (max-width: 580px) {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 

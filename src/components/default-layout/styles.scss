@@ -6,9 +6,52 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
   border-right: 1px solid $gray-color;
   border-left: 1px solid $gray-color;
+
+
+  @media (max-width: 1440px) {
+    height: 100vh;
+    max-width: 1440px;
+    padding: 10px;
+    border-right: 1px solid $gray-color;
+    border-left: 1px solid $gray-color;
+  }
+
+  @media (max-width: 1024px) {
+    height: 100vh;
+    max-width: 1000px;
+    padding: 10px;
+    border-right: 1px solid $gray-color;
+    border-left: 1px solid $gray-color;
+  }
+
+  @media (max-width: 767px) {
+
+    max-width: 767px;
+
+  }
+
+  @media (max-width: 560px) {
+
+    max-width: 560px;
+
+  }
+
+
+  @media (max-width: 480px) {
+
+    max-width: 480px;
+
+  }
+
+
+  @media (max-width: 380px) {
+
+    max-width: 380px;
+
+  }
 }

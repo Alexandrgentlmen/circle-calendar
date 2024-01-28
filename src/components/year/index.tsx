@@ -18,7 +18,7 @@ function Year({ year, variant }: YearProps) {
   return (
     <div className={cn()}>
       <span className={variant === 'start' ? cn('start') : cn('end')}>
-        {value}&nbsp;
+        {value}
       </span>
     </div>
   );

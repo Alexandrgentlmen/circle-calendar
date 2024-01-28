@@ -7,12 +7,41 @@
 }
 
 .Container-year {
-  top: 364px;
+  // top: 364px;
+  top: 34%;
   display: flex;
   gap: 60px;
   position: absolute;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1440px) {
+    top: 36%;
+  }
+
+  @media (max-width: 1024px) {
+    top: 34%;
+  }
+
+  @media (max-width: 760px) {
+    top: 27%;
+  }
+
+
+  @media (max-width: 580px) {
+    top: 24%;
+  }
+
+  @media (max-width: 480px) {
+    // top: 210px;
+    gap: 13px;
+  }
+
+  @media (max-width: 379px) {
+    top: 178px;
+    left: 8%;
+    gap: 13px;
+  }
 }
 
 .Container-dot {
