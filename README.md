@@ -20,7 +20,7 @@
 
 ## Demo
 
-Vercel.com
+[circle-calendar](circle-calendar.vercel.app/)
 
 
 ## FAQ
@@ -29,7 +29,7 @@ Vercel.com
 
 npm i
 
-npm run dev
+npm run start
 
 ### запуск в докере (протестировано только на линукс, нужны make, docker, docker-compose)
 
