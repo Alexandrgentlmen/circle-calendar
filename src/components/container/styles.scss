@@ -7,8 +7,6 @@
 }
 
 .Container-year {
-  // top: 364px;
-  // top: 34%;
   top: 22%;
   display: flex;
   gap: 60px;
@@ -17,7 +15,6 @@
   align-items: center;
 
   @media (max-width: 1440px) {
-    // top: 36%;
     top: 25%;
   }
 
