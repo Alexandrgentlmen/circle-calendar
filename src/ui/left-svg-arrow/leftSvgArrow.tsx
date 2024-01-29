@@ -1,5 +1,6 @@
 import { cn as bem } from '@bem-react/classname';
 import './styles.scss';
+import { useSwiper } from 'swiper/react';
 
 interface IArrow {
   active: boolean;
@@ -8,8 +9,14 @@ interface IArrow {
 
 const LeftSvgArrow = ({ active, toBack }: IArrow) => {
   const cn = bem('LeftSvgArrow');
+  const swiper = useSwiper();
+  const handleClick = () => {
+    toBack();
+    swiper.slideTo(0);
+  };
+
   return (
-    <button className={cn()} onClick={toBack}>
+    <button className={cn()} onClick={handleClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         // width="50"

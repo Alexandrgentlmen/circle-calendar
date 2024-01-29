@@ -71,17 +71,17 @@ function Slider({ periodTimes, setId }: ISliderProps) {
               </div>
             </SwiperSlide>
           ))}
+          <SliderControllers
+            dates={dates}
+            currentPeriod={periodTimes}
+            toBack={() => setId(periodTimes, 'left')}
+            toForward={() => setId(periodTimes, 'right')}
+          />
         </Swiper>
         <button className={cn('right')}>
           <SvgArrow />
         </button>
       </div>
-      <SliderControllers
-        dates={dates}
-        currentPeriod={periodTimes}
-        toBack={() => setId(periodTimes, 'left')}
-        toForward={() => setId(periodTimes, 'right')}
-      />
     </>
   );
 }

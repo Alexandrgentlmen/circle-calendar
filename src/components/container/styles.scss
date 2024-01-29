@@ -8,7 +8,8 @@
 
 .Container-year {
   // top: 364px;
-  top: 34%;
+  // top: 34%;
+  top: 22%;
   display: flex;
   gap: 60px;
   position: absolute;
@@ -16,11 +17,12 @@
   align-items: center;
 
   @media (max-width: 1440px) {
-    top: 36%;
+    // top: 36%;
+    top: 25%;
   }
 
   @media (max-width: 1024px) {
-    top: 34%;
+    top: 22%;
   }
 
   @media (max-width: 760px) {
@@ -33,12 +35,12 @@
   }
 
   @media (max-width: 480px) {
-    // top: 210px;
+    top: 30%;
     gap: 13px;
   }
 
   @media (max-width: 379px) {
-    top: 178px;
+    top: 29%;
     left: 8%;
     gap: 13px;
   }

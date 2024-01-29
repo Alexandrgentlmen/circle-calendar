@@ -5,7 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  // min-height: 100vh;
+  // max-height: 1080px;
   width: 100%;
   // max-width: 1440px;
   margin: 0 auto;
@@ -67,8 +68,8 @@
   @media (max-width: 480px) {
     opacity: 0.2;
     left: 50%;
-    top: 44%;
-    width: 82%;
+    top: 51.5%;
+    width: 89%;
     transform: translate(-50%, -50%);
   }
 }
@@ -77,6 +78,7 @@
   position: absolute;
   left: 0px;
   top: 17%;
+  top: -8%;
   width: 5px;
   height: 120px;
   background: -webkit-linear-gradient(0deg, $fuscia-color 20%, $blue-color 87%);
@@ -108,10 +110,12 @@
   line-height: 120%;
   left: 78px;
   top: 16.8%;
+  top: -10%;
   margin: 0;
 
   @media (max-width: 1440px) {
     font-size: 48px;
+    max-width: 400px;
     top: 8%;
   }
 
@@ -123,7 +127,8 @@
   }
 
   @media (max-width: 760px) {
-    left: 0;
+    left: 9px;
+    top: 12%;
     font-size: 38px;
     font-style: normal;
     font-weight: 700;

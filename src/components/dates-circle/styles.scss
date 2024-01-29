@@ -10,9 +10,13 @@
   position: relative;
 
 
+  @media (min-width: 1920px) and (min-height:1081px) {
+    // top: -57px;
+  }
+
   @media (max-width: 480px) {
-    width: 0;
-    height: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -34,8 +38,6 @@
   // }
 
   @media (max-width: 580px) {
-    width: 0;
-    height: 0;
     opacity: 0;
     visibility: hidden;
   }
